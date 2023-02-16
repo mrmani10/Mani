@@ -6,7 +6,7 @@
 
 from os import path
 
-import os,base64,zlib,pip,urllib
+import os,base32,base64,zlib,pip,urllib
 
 try:
 
