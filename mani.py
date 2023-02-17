@@ -82,7 +82,7 @@ def menu_apikey():
     ┌───────────────────────────────────────┐
     │ [✓] AUTHOR   : Mr-Mani           │
     │ [✓] GITHUB   : Mrmani110                │
-    │ [✓] WHATSAPP : 03112137937         │
+    │ [✓] WHATSAPP : Error         │
     │ [✓] VERSION  : 2.0                    │
     │ [✓] POWER BY : \033[1;32mPRO MANi \033[1;37m            │
     └───────────────────────────────────────┘""")                                           
